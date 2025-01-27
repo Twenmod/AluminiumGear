@@ -1,3 +1,12 @@
+This project was made for block B of IGAD/CMGT of Breda University of Applied Sciences
+
+This project's original target sytem is the Raspberry Pi 4
+It also builds on windows
+
+Pi build may break if I update this project
+
+
+
 # Running
 1) Open "CrossPiProject.sln"
 2) make sure you select the correct startup project for either Rasp4Project for PI, or Windows for windows/pc
