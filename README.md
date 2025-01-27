@@ -1,4 +1,17 @@
-# running
+This project was made for block B of Y1 Programming of IGAD/CMGT at Breda University of Applied Sciences
+
+This project's original target sytem is the Raspberry Pi 4
+It also builds on windows
+
+Pi build may break if I update this project
+
+
+# Project details
+This project runs on OpenGL ES 3.1
+On windows GLFW is used to handle windows,
+On linux its base X11
+
+# Running
 1) Open "CrossPiProject.sln"
 2) make sure you select the correct startup project for either Rasp4Project for PI, or Windows for windows/pc
 3) Select the project architecture i.e x64 for pc and arm64 for pi 4
@@ -8,7 +21,7 @@ Some external libraries are required for this project
 Windows specific
 - GLFW
 - glad
-Linux specific
+Linux/Pi specific
 - X11
 - GLES31
 Shared
@@ -17,14 +30,14 @@ Shared
 - libdl (for miniaudio.h)
 
 
-# gameplay
+# Gameplay
 your goal is to get to the exit of the facility,
 find items around the level to help you.
 Do not get spotted by enemies or take them out before they can.
 
 view the cheat sheet image next to this file to see where all items in the level are.
 
-## controls
+## Controls
 mouse for menus
 [ESCAPE] for pause menu
 [WASD] to move
