@@ -23,6 +23,9 @@ void window_size_callback(GLFWwindow*, int width, int height)
 
 
 // Mains only purpose is to set up OGL and then jump to general game code
+
+
+
 int main()
 {
 	WinGraphics = new WindowsGraphics();
@@ -50,6 +53,13 @@ int main()
 
 	return 0;
 }
+
+#ifdef RELEASE
+int WinMain()
+{
+	return main();
+}
+#endif
 
 void framebufferSizeCallback(GLFWwindow* /*window*/, int width, int height)
 {

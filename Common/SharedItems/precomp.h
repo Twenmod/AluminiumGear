@@ -10,7 +10,7 @@
 #include "glad/glad.h"
 
 //VLD
-#ifdef _DEBUG
+#ifdef DEBUG
 //#include <vld.h>
 #endif
 

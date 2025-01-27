@@ -47,7 +47,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
+    <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -79,6 +79,7 @@
     <IncludePath>PCContent;PCContent\include;PCContent\include\glm;PCContent\include\bullet;PCContent]\include\GLFW;PCContent\include\glad;Common;C:\Program Files (x86)\Visual Leak Detector\include;$(IncludePath)</IncludePath>
     <LibraryPath>PCContent\lib;PCContent\lib\x64\Debug;C:\Program Files (x86)\Visual Leak Detector\lib\Win64;$(LibraryPath)</LibraryPath>
     <OutDir>$(ProjectDir)bin\</OutDir>
+    <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -108,28 +109,31 @@
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions);WINDOWS_BUILD</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CONSOLE;DEBUG;%(PreprocessorDefinitions);WINDOWS_BUILD</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>precomp.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(PlatformName)/assimp-vc143-mtd.lib;glfw3.lib;opengl32.lib;kernel32.lib;BulletCollision.lib;BulletSoftBody.lib;BulletDynamics.lib;LinearMath.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(PlatformName)/assimp-vc143-mtd.lib;$(PlatformName)/$(Configuration)/glfw3.lib;opengl32.lib;kernel32.lib;$(PlatformName)/$(Configuration)/BulletCollision.lib;$(PlatformName)/$(Configuration)/BulletSoftBody.lib;$(PlatformName)/$(Configuration)/BulletDynamics.lib;$(PlatformName)/$(Configuration)/LinearMath.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>Level4</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);WINDOWS_BUILD</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CONSOLE;%(PreprocessorDefinitions);WINDOWS_BUILD;RELEASE</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeaderFile>precomp.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(PlatformName)/assimp-vc143-mtd.lib;glfw3.lib;opengl32.lib;kernel32.lib;BulletCollision.lib;BulletSoftBody.lib;BulletDynamics.lib;LinearMath.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>$(PlatformName)/assimp-vc143-mtd.lib;$(PlatformName)/$(Configuration)/glfw3.lib;opengl32.lib;kernel32.lib;$(PlatformName)/$(Configuration)/BulletCollision.lib;$(PlatformName)/$(Configuration)/BulletSoftBody.lib;$(PlatformName)/$(Configuration)/BulletDynamics.lib;$(PlatformName)/$(Configuration)/LinearMath.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -142,6 +146,14 @@
     <ClInclude Include="PCContent\stb_image.h" />
     <ClInclude Include="PCContent\WindowsGraphics.h" />
     <ClInclude Include="PCContent\WindowsInput.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Windows.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
