@@ -6,6 +6,10 @@ It also builds on windows
 Pi build may break if I update this project
 
 
+# Project details
+This project runs on OpenGL ES 3.1
+On windows GLFW is used to handle windows,
+On linux its base X11
 
 # Running
 1) Open "CrossPiProject.sln"
