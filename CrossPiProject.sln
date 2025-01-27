@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35506.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Windows", "CrossPiProject.vcxproj", "{CE43D08D-16EA-4473-892A-DBD8D5C588A5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SharedItems", "Common\SharedItems\SharedItems.vcxitems", "{A001FCAF-2399-4412-A986-3E56AE0C15D4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Rasp4Project", "Raspberry4Project\Raspberry4Project.vcxproj", "{2CE26E1C-FDAE-473A-90AA-11A0436CFE21}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE43D08D-16EA-4473-892A-DBD8D5C588A5}.Debug|ARM.ActiveCfg = Debug|x64
+		{CE43D08D-16EA-4473-892A-DBD8D5C588A5}.Debug|ARM.Build.0 = Debug|x64
+		{CE43D08D-16EA-4473-892A-DBD8D5C588A5}.Debug|ARM64.ActiveCfg = Debug|x64
+		{CE43D08D-16EA-4473-892A-DBD8D5C588A5}.Debug|x64.ActiveCfg = Debug|x64
+		{CE43D08D-16EA-4473-892A-DBD8D5C588A5}.Debug|x64.Build.0 = Debug|x64
+		{CE43D08D-16EA-4473-892A-DBD8D5C588A5}.Debug|x86.ActiveCfg = Debug|x64
+		{CE43D08D-16EA-4473-892A-DBD8D5C588A5}.Debug|x86.Build.0 = Debug|x64
+		{CE43D08D-16EA-4473-892A-DBD8D5C588A5}.Release|ARM.ActiveCfg = Debug|x64
+		{CE43D08D-16EA-4473-892A-DBD8D5C588A5}.Release|ARM64.ActiveCfg = Debug|x64
+		{CE43D08D-16EA-4473-892A-DBD8D5C588A5}.Release|x64.ActiveCfg = Release|x64
+		{CE43D08D-16EA-4473-892A-DBD8D5C588A5}.Release|x64.Build.0 = Release|x64
+		{CE43D08D-16EA-4473-892A-DBD8D5C588A5}.Release|x86.ActiveCfg = Debug|Win32
+		{2CE26E1C-FDAE-473A-90AA-11A0436CFE21}.Debug|ARM.ActiveCfg = Debug|ARM
+		{2CE26E1C-FDAE-473A-90AA-11A0436CFE21}.Debug|ARM.Build.0 = Debug|ARM
+		{2CE26E1C-FDAE-473A-90AA-11A0436CFE21}.Debug|ARM.Deploy.0 = Debug|ARM
+		{2CE26E1C-FDAE-473A-90AA-11A0436CFE21}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{2CE26E1C-FDAE-473A-90AA-11A0436CFE21}.Debug|ARM64.Build.0 = Debug|ARM64
+		{2CE26E1C-FDAE-473A-90AA-11A0436CFE21}.Debug|x64.ActiveCfg = Debug|ARM64
+		{2CE26E1C-FDAE-473A-90AA-11A0436CFE21}.Debug|x86.ActiveCfg = Debug|ARM
+		{2CE26E1C-FDAE-473A-90AA-11A0436CFE21}.Release|ARM.ActiveCfg = Debug|ARM
+		{2CE26E1C-FDAE-473A-90AA-11A0436CFE21}.Release|ARM64.ActiveCfg = Debug|ARM64
+		{2CE26E1C-FDAE-473A-90AA-11A0436CFE21}.Release|x64.ActiveCfg = Debug|ARM
+		{2CE26E1C-FDAE-473A-90AA-11A0436CFE21}.Release|x86.ActiveCfg = Debug|ARM
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8D8BF2B-6929-4D35-B29A-84E059B586D3}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Common\SharedItems\SharedItems.vcxitems*{2ce26e1c-fdae-473a-90aa-11a0436cfe21}*SharedItemsImports = 4
+		Common\SharedItems\SharedItems.vcxitems*{a001fcaf-2399-4412-a986-3e56ae0c15d4}*SharedItemsImports = 9
+		Common\SharedItems\SharedItems.vcxitems*{ce43d08d-16ea-4473-892a-dbd8d5c588a5}*SharedItemsImports = 4
+	EndGlobalSection
+EndGlobal

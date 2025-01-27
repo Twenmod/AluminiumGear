@@ -1,0 +1,838 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{1db9b687-8c5c-413d-8ef1-1aaecba420e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui">
+      <UniqueIdentifier>{5dcf5caa-0d5e-4f0e-ae14-3dd9bba848f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{7f0a2826-32e6-4ed4-afb5-2d6b8c7d42da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{eefbe118-9d3f-4fbf-b46d-48af61968089}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Real Engine">
+      <UniqueIdentifier>{95c3d4b3-a990-44f7-b17b-02467a212ebf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Real Engine\Rendering">
+      <UniqueIdentifier>{e231405a-811f-4923-b06a-8293a66e7d72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Real Engine\Managers">
+      <UniqueIdentifier>{fce9a780-77dd-4076-9ab8-e37542e18d9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Real Engine\Game">
+      <UniqueIdentifier>{e94bb092-eb6d-4526-a002-ff0c742934e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Real Engine\Input">
+      <UniqueIdentifier>{51298f14-a432-4527-be34-5f44a6f0deb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Real Engine\ImGui">
+      <UniqueIdentifier>{21f9a74b-eb54-4154-a784-d79793cdb011}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics">
+      <UniqueIdentifier>{f6e725c1-2959-48e3-9a17-80cf52a12cad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Real Engine\Math">
+      <UniqueIdentifier>{1843b9f3-e10c-4f0b-8835-ee6fa29218f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Real Engine\Rendering\Animation">
+      <UniqueIdentifier>{14a51899-149e-477e-9d15-9a398d0793b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Real Engine\AI">
+      <UniqueIdentifier>{827391d4-5c04-4826-93f6-75b99de108d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Inventory">
+      <UniqueIdentifier>{3a9baaac-dca8-4b84-998f-a8c01a5e8be5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Inventory\Items">
+      <UniqueIdentifier>{392fdcf7-e6df-41f0-853f-b4d87859cc6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Compute">
+      <UniqueIdentifier>{f5ba9642-1306-451b-84f4-b02745d3d3cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Particles">
+      <UniqueIdentifier>{66306006-9bb3-4786-81f8-6b4e8d3106a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Real Engine\Audio">
+      <UniqueIdentifier>{8d38f236-f18c-4b8f-88bf-3695dd2f056e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\IInput.h">
+      <Filter>Real Engine\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Mesh.hpp">
+      <Filter>Real Engine\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Model.hpp">
+      <Filter>Real Engine\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Shader.h">
+      <Filter>Real Engine\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ModelManager.h">
+      <Filter>Real Engine\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ShaderManager.h">
+      <Filter>Real Engine\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)TextureManager.h">
+      <Filter>Real Engine\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)precomp.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Common.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameObject.h">
+      <Filter>Real Engine\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IInputEvent.h">
+      <Filter>Real Engine\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Input.h">
+      <Filter>Real Engine\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ObjectManager.h">
+      <Filter>Real Engine\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Scene.h">
+      <Filter>Real Engine\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Camera.h">
+      <Filter>Real Engine\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)RealEngine.h">
+      <Filter>Real Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Light.h">
+      <Filter>Real Engine\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ThirdPersonCamera.hpp">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Player.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIManager.h">
+      <Filter>Real Engine\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)BTDebugDrawer.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)RealMath.h">
+      <Filter>Real Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)BodyMotionState.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Bone.h">
+      <Filter>Real Engine\Rendering\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Animation.h">
+      <Filter>Real Engine\Rendering\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Animator.h">
+      <Filter>Real Engine\Rendering\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)AnimatedGameObject.h">
+      <Filter>Real Engine\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Enemy.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)IDamageable.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ReflectionProbe.h">
+      <Filter>Real Engine\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)NavMesh.h">
+      <Filter>Real Engine\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Inventory.h">
+      <Filter>Game\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Item.h">
+      <Filter>Game\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)PlayerUI.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)GroundItem.h">
+      <Filter>Game\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ICollisionCallback.h">
+      <Filter>Real Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Pistol.h">
+      <Filter>Game\Inventory\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)WaterModel.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Perlin.h">
+      <Filter>Real Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)GibbedGameObject.h">
+      <Filter>Real Engine\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ImGui\imconfig.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ImGui\imgui.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ImGui\imgui_internal.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ImGui\imstb_rectpack.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ImGui\imstb_textedit.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ImGui\imstb_truetype.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ImGui\backends\imgui_impl_opengl3.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ImGui\backends\imgui_impl_opengl3_loader.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ImGui\imgui_impl_pi.h">
+      <Filter>Real Engine\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ParticleSystem.h">
+      <Filter>Real Engine\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ComputeShader.h">
+      <Filter>Real Engine\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)FlickeringLight.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cigal.h">
+      <Filter>Game\Inventory\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Ration.h">
+      <Filter>Game\Inventory\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)miniaudio.h">
+      <Filter>Real Engine\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)AudioManager.h">
+      <Filter>Real Engine\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)LightFlash.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\IGraphics.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Grenade.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)GrenadeItem.h">
+      <Filter>Game\Inventory\Items</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Input.cpp">
+      <Filter>Real Engine\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Model.cpp">
+      <Filter>Real Engine\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Shader.cpp">
+      <Filter>Real Engine\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ModelManager.cpp">
+      <Filter>Real Engine\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ShaderManager.cpp">
+      <Filter>Real Engine\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)TextureManager.cpp">
+      <Filter>Real Engine\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameObject.cpp">
+      <Filter>Real Engine\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)IInputEvent.cpp">
+      <Filter>Real Engine\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ObjectManager.cpp">
+      <Filter>Real Engine\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Scene.cpp">
+      <Filter>Real Engine\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Camera.cpp">
+      <Filter>Real Engine\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Light.cpp">
+      <Filter>Real Engine\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ThirdPersonCamera.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Player.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)RealEngine.cpp">
+      <Filter>Real Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)UIManager.cpp">
+      <Filter>Real Engine\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)BTDebugDrawer.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)RealMath.cpp">
+      <Filter>Real Engine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)BodyMotionState.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Bone.cpp">
+      <Filter>Real Engine\Rendering\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Animation.cpp">
+      <Filter>Real Engine\Rendering\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Animator.cpp">
+      <Filter>Real Engine\Rendering\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)AnimatedGameObject.cpp">
+      <Filter>Real Engine\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Enemy.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ReflectionProbe.cpp">
+      <Filter>Real Engine\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)NavMesh.cpp">
+      <Filter>Real Engine\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Inventory.cpp">
+      <Filter>Game\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Item.cpp">
+      <Filter>Game\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)PlayerUI.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)GroundItem.cpp">
+      <Filter>Game\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Pistol.cpp">
+      <Filter>Game\Inventory\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)WaterModel.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Perlin.cpp">
+      <Filter>Real Engine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Mesh.cpp">
+      <Filter>Real Engine\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)GibbedGameObject.cpp">
+      <Filter>Real Engine\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ImGui\imgui.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ImGui\imgui_demo.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ImGui\imgui_draw.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ImGui\imgui_tables.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ImGui\imgui_widgets.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ImGui\backends\imgui_impl_opengl3.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ImGui\imgui_impl_pi.cpp">
+      <Filter>Real Engine\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ParticleSystem.cpp">
+      <Filter>Real Engine\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ComputeShader.cpp">
+      <Filter>Real Engine\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)FlickeringLight.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cigal.cpp">
+      <Filter>Game\Inventory\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Ration.cpp">
+      <Filter>Game\Inventory\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)AudioManager.cpp">
+      <Filter>Real Engine\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)LightFlash.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Grenade.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)GrenadeItem.cpp">
+      <Filter>Game\Inventory\Items</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\BaseShader.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\BaseShader.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\Skybox.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\Skybox.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\Line.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\Line.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\Skeletal.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\Skeletal.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\level1.mtl">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\level2.mtl">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\level3.mtl">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\Enemy\Walking.dae">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\level1Nav.mtl">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\Player\Aiming.dae">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\Player\Aimwalk.dae">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\Player\ModelIdle.dae">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\Player\Run.dae">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\Player\Walking.dae">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\Enemy\Aim.dae">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\Enemy\AimWalk.dae">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\Enemy\Die.dae">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\Enemy\Idle.dae">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\SimpleShader.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\SimpleShader.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\Hologram.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\Hologram.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\Water.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\Water.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\Items\Pistol.mtl">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\PostProcess.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\PostProcess.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\Particle.mtl">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\particleUnlit.frag">
+      <Filter>Shaders\Particles</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\particleUnlit.vert">
+      <Filter>Shaders\Particles</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\particle.vert">
+      <Filter>Shaders\Particles</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\particle.frag">
+      <Filter>Shaders\Particles</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\particleCompute.glsl">
+      <Filter>Shaders\Compute</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\Items\Cigal.fbx">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\Items\Fist.fbx">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\Items\Ration.fbx">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\Enemy\Skeleton.mtl">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\NoReflec.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\NoReflec.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\Boxes.mtl">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\Items\Grenade.mtl">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\Enemy\WalkModel.dae">
+      <Filter>Assets</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\level1.obj">
+      <Filter>Assets</Filter>
+    </Object>
+    <Object Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\level2.obj">
+      <Filter>Assets</Filter>
+    </Object>
+    <Object Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\level3.obj">
+      <Filter>Assets</Filter>
+    </Object>
+    <Object Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\level1Nav.obj">
+      <Filter>Assets</Filter>
+    </Object>
+    <Object Include="$(MSBuildThisFileDirectory)..\Assets\Models\Items\Pistol.obj">
+      <Filter>Assets</Filter>
+    </Object>
+    <Object Include="$(MSBuildThisFileDirectory)..\Assets\Models\Particle.obj">
+      <Filter>Assets</Filter>
+    </Object>
+    <Object Include="$(MSBuildThisFileDirectory)..\Assets\Models\Enemy\Skeleton.obj">
+      <Filter>Assets</Filter>
+    </Object>
+    <Object Include="$(MSBuildThisFileDirectory)..\Assets\Models\Boxes.obj">
+      <Filter>Assets</Filter>
+    </Object>
+    <Object Include="$(MSBuildThisFileDirectory)..\Assets\Models\Items\Grenade.obj">
+      <Filter>Assets</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\missing.jpg">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Player\Tex_0645_0.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Player\Tex_0646_0.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Player\Tex_0655_0.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Player\Tex_0656_0.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Player\Tex_0657_0.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Player\Tex_0659_0.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Player\Tex_0668_0.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Player\Tex_0670_0.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Player\Tex_0671_0.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Player\Tex_0672_0.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Player\Tex_0675_0.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Player\Tex_0676_0.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Player\Tex_0677_0.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Player\Tex_0678_0.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Player\Tex_0679_0.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Player\Tex_0691_0.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Player\Tex_0692_0.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Player\Tex_0693_0.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Player\Tex_0694_0.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Player\Tex_0695_0.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Player\Tex_0696_0.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Player\Tex_0697_0.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Enemy\AK_Base_color.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Enemy\Bone.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Enemy\Brain.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Enemy\Flesh.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Items\Ration.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_ascenseur.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_ascenseur-EMISSION.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_cale01.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_cale02.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_cale02-EMISSION.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_cale03.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_cale03-EMISSION.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_clonage01.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_clonage02.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_clonage03.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_clonage04.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_clonage04-EMISSION.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_couloir.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_coursive01.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_coursive01-EMISSION.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_crematorium.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_salle_test01.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_salle_test02.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_salle_test03.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_salle_test04.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_salle_test04-Alpha.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_salle_test04-EMISSION.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Items\Cigal.fbm\cigal.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Items\Fist.fbm\Fist.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Items\Ration.fbm\Ration.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Enemy\file1.002.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Enemy\file5.002.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_ascenseur_normal.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_cale02_normal.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_couloir_normal.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_crematorium_normal.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_salle_test01_normal.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_salle_test02_normal.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\buas.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Cardboard_boxes_1_BaseColor.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Items\grenadeColor.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Items\usp_silencer_default_color_psd_eff328d8_2.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_cale03_normal.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_clonage02_normal.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_clonage03_normal.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Maps\map1\n7_salle_test04_normal.png">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)Credits.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="$(MSBuildThisFileDirectory)..\Assets\Audio\pew.wav">
+      <Filter>Assets</Filter>
+    </Media>
+    <Media Include="$(MSBuildThisFileDirectory)..\Assets\Audio\alert.wav">
+      <Filter>Assets</Filter>
+    </Media>
+    <Media Include="$(MSBuildThisFileDirectory)..\Assets\Audio\enemyShoot.wav">
+      <Filter>Assets</Filter>
+    </Media>
+    <Media Include="$(MSBuildThisFileDirectory)..\Assets\Audio\equip.wav">
+      <Filter>Assets</Filter>
+    </Media>
+    <Media Include="$(MSBuildThisFileDirectory)..\Assets\Audio\exit.wav">
+      <Filter>Assets</Filter>
+    </Media>
+    <Media Include="$(MSBuildThisFileDirectory)..\Assets\Audio\GameOver.wav">
+      <Filter>Assets</Filter>
+    </Media>
+    <Media Include="$(MSBuildThisFileDirectory)..\Assets\Audio\heal.wav">
+      <Filter>Assets</Filter>
+    </Media>
+    <Media Include="$(MSBuildThisFileDirectory)..\Assets\Audio\pickup.wav">
+      <Filter>Assets</Filter>
+    </Media>
+    <Media Include="$(MSBuildThisFileDirectory)..\Assets\Audio\playerhit.wav">
+      <Filter>Assets</Filter>
+    </Media>
+    <Media Include="$(MSBuildThisFileDirectory)..\Assets\Audio\select.wav">
+      <Filter>Assets</Filter>
+    </Media>
+    <Media Include="$(MSBuildThisFileDirectory)..\Assets\Audio\smoke.wav">
+      <Filter>Assets</Filter>
+    </Media>
+    <Media Include="$(MSBuildThisFileDirectory)..\Assets\Audio\encounter.wav">
+      <Filter>Assets</Filter>
+    </Media>
+    <Media Include="$(MSBuildThisFileDirectory)..\Assets\Audio\gameTheme.wav">
+      <Filter>Assets</Filter>
+    </Media>
+    <Media Include="$(MSBuildThisFileDirectory)..\Assets\Audio\mainTheme.wav">
+      <Filter>Assets</Filter>
+    </Media>
+    <Media Include="$(MSBuildThisFileDirectory)..\Assets\Audio\spark.wav">
+      <Filter>Assets</Filter>
+    </Media>
+    <Media Include="$(MSBuildThisFileDirectory)..\Assets\Audio\victory.wav">
+      <Filter>Assets</Filter>
+    </Media>
+    <Media Include="$(MSBuildThisFileDirectory)..\Assets\Audio\boom.wav">
+      <Filter>Assets</Filter>
+    </Media>
+    <Media Include="$(MSBuildThisFileDirectory)..\Assets\Audio\throw.wav">
+      <Filter>Assets</Filter>
+    </Media>
+  </ItemGroup>
+</Project>

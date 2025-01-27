@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2ce26e1c-fdae-473a-90aa-11a0436cfe21}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>Raspberry4Project</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Raspberry</TargetLinuxPlatform>
+    <LinuxProjectType>{8748239F-558C-44D1-944B-07B09C35B330}</LinuxProjectType>
+    <ProjectName>Rasp4Project</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared">
+    <Import Project="..\Common\SharedItems\SharedItems.vcxitems" Label="Shared" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <IncludePath>/usr/include/aarch64-linux-gnu/c++/12;/usr/include;/usr/include/bullet;/home/pi/glm;../Common;../Raspberry;/home/pi/stb;$(IncludePath)</IncludePath>
+    <LibraryPath>/usr/lib/aarch64-linux-gnueabihf</LibraryPath>
+    <MultiProcNumber>5</MultiProcNumber>
+    <RemoteOutRelDir>$(RemoteProjectRelDir)/bin</RemoteOutRelDir>
+    <OutDir>$(ProjectDir)bin\</OutDir>
+    <RemoteLinkLocalCopyOutput>false</RemoteLinkLocalCopyOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <OutDir>$(ProjectDir)bin\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Link>
+      <LibraryDependencies>wiringPi</LibraryDependencies>
+      <AdditionalOptions>-ldl %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <RemotePostBuildEvent>
+      <Command>gpio export 17 out</Command>
+      <Message>export pin 17 using the gpio utility so that we can execute the blink program without sudo</Message>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Raspberry\RaspGraphics.cpp" />
+    <ClCompile Include="..\Raspberry\RaspKeyboard.cpp" />
+    <ClCompile Include="..\Raspberry\RaspMouse.cpp" />
+    <ClCompile Include="..\Raspberry\XWindow.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Raspberry\EGLState.h" />
+    <ClInclude Include="..\Raspberry\RaspGraphics.h" />
+    <ClInclude Include="..\Raspberry\RaspKeyboard.h" />
+    <ClInclude Include="..\Raspberry\RaspMouse.h" />
+    <ClInclude Include="..\Raspberry\XWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Update="E:\Perforce\Jack240281\Y1\BLOCKB\template\Common\SharedItems\Scene.h">
+      <FileType>CppHeader</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <Link>
+      <LibraryDependencies>GLESv2;EGL;pthread;X11;Xrandr;assimp;BulletCollision;BulletSoftBody;BulletDynamics;LinearMath;</LibraryDependencies>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>-Wl,--no-as-needed -ldl -latomic %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>DEBUG;Raspberry_BUILD;GLES3</PreprocessorDefinitions>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <CppLanguageStandard>c++17</CppLanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
