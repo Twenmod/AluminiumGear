@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\Raspberry\RaspGraphics.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Raspberry\XWindow.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Raspberry\RaspKeyboard.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Raspberry\RaspMouse.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{19ea52d4-3cc7-4e60-af1a-c9fd1426834f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{4b2ee44c-32cc-4bf3-b727-5f20e001ae89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LibsAndInterfaces">
+      <UniqueIdentifier>{d5910770-4548-4f8f-8c49-348fa692fc65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{5f890011-a4f5-48d1-bfbf-e4f87845721d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Raspberry\RaspGraphics.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Raspberry\EGLState.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Raspberry\RaspKeyboard.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Raspberry\RaspMouse.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Raspberry\XWindow.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,3 @@
+Enemy(Monsoon) model from https://sketchfab.com/3d-models/monsoon-50a0991ccbba43b8bd6287aa83478388 by shutupluke
+Player(snake) model from https://sketchfab.com/3d-models/naked-snake-8a39ceba511b470c8bd8b6b7b71bd3d0 ported by bobberxd originally from Metal Gear Solid: Portable Ops
+Level model from https://sketchfab.com/3d-models/level6-zone4-level-design-2002-1141d70a71b542189d3b5091bd51d5ee by hansolocambo

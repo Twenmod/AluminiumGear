@@ -1,0 +1,203 @@
+# Blender 4.0.2 MTL File: 'None'
+# www.blender.org
+
+newmtl ascenseur.005
+Ns 25.000004
+Ka 1.000000 1.000000 1.000000
+Ks 0.050000 0.050000 0.050000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd n7_ascenseur.png
+map_Ke n7_ascenseur-EMISSION.png
+map_Bump -bm 1.000000 n7_ascenseur_normal.png
+
+newmtl cale02.005
+Ns 25.000004
+Ka 1.000000 1.000000 1.000000
+Ks 0.050000 0.050000 0.050000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd n7_cale02.png
+map_Bump -bm 1.000000 n7_cale02_normal.png
+
+newmtl cale02.006
+Ns 25.000004
+Ka 1.000000 1.000000 1.000000
+Ks 0.050000 0.050000 0.050000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd n7_cale02.png
+map_Bump -bm 1.000000 n7_cale02_normal.png
+
+newmtl cale3.004
+Ns 25.000004
+Ka 1.000000 1.000000 1.000000
+Ks 0.050000 0.050000 0.050000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd n7_cale03.png
+map_Ke n7_cale03-EMISSION.png
+map_Bump -bm 1.000000 n7_cale03_normal.png
+
+newmtl clonage01.001
+Ns 25.000004
+Ka 1.000000 1.000000 1.000000
+Ks 0.050000 0.050000 0.050000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd n7_clonage01.png
+
+newmtl clonage02.001
+Ns 25.000004
+Ka 1.000000 1.000000 1.000000
+Ks 0.050000 0.050000 0.050000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd n7_clonage02.png
+map_Bump -bm 1.000000 n7_clonage02_normal.png
+
+newmtl clonage03.005
+Ns 25.000004
+Ka 1.000000 1.000000 1.000000
+Ks 0.050000 0.050000 0.050000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd n7_clonage03.png
+
+newmtl clonage03.006
+Ns 25.000004
+Ka 1.000000 1.000000 1.000000
+Ks 0.050000 0.050000 0.050000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd n7_clonage03.png
+map_Bump -bm 1.000000 n7_clonage03_normal.png
+
+newmtl clonage4.005
+Ns 25.000004
+Ka 1.000000 1.000000 1.000000
+Ks 0.050000 0.050000 0.050000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd n7_clonage04.png
+map_Ke n7_clonage04-EMISSION.png
+
+newmtl clonage4.007
+Ns 25.000004
+Ka 1.000000 1.000000 1.000000
+Ks 0.050000 0.050000 0.050000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd n7_clonage04.png
+map_Ke n7_clonage04-EMISSION.png
+
+newmtl clonage4.008
+Ns 25.000004
+Ka 1.000000 1.000000 1.000000
+Ks 0.050000 0.050000 0.050000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd n7_clonage04.png
+map_Ke n7_clonage04-EMISSION.png
+
+newmtl couloir.005
+Ns 25.000004
+Ka 1.000000 1.000000 1.000000
+Ks 0.050000 0.050000 0.050000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd n7_couloir.png
+map_Bump -bm 1.000000 n7_couloir_normal.png
+
+newmtl coursive01.005
+Ns 25.000004
+Ka 1.000000 1.000000 1.000000
+Ks 0.050000 0.050000 0.050000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd n7_coursive01.png
+map_Ke n7_coursive01-EMISSION.png
+
+newmtl crematorium.005
+Ns 25.000004
+Ka 1.000000 1.000000 1.000000
+Ks 0.050000 0.050000 0.050000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd n7_crematorium.png
+map_Bump -bm 1.000000 n7_crematorium_normal.png
+
+newmtl salle_test01.005
+Ns 25.000004
+Ka 1.000000 1.000000 1.000000
+Ks 0.050000 0.050000 0.050000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd n7_salle_test01.png
+map_Bump -bm 1.000000 n7_salle_test01_normal.png
+
+newmtl salle_test03.005
+Ns 25.000004
+Ka 1.000000 1.000000 1.000000
+Ks 0.050000 0.050000 0.050000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd n7_salle_test03.png
+
+newmtl salletest2.005
+Ns 25.000004
+Ka 1.000000 1.000000 1.000000
+Ks 0.050000 0.050000 0.050000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd n7_salle_test02.png
+map_Bump -bm 0.500000 n7_salle_test02_normal.png
+
+newmtl salletest4.005
+Ns 25.000004
+Ka 1.000000 1.000000 1.000000
+Ks 0.050000 0.050000 0.050000
+Ni 1.500000
+illum 2
+map_Kd n7_salle_test04.png
+map_Ke n7_salle_test04-EMISSION.png
+map_d n7_salle_test04-Alpha.png
+
+newmtl salletest4.006
+Ns 25.000004
+Ka 1.000000 1.000000 1.000000
+Ks 0.050000 0.050000 0.050000
+Ni 1.500000
+illum 2
+map_Kd n7_salle_test04.png
+map_Ke n7_salle_test04-EMISSION.png
+map_d n7_salle_test04-Alpha.png
+map_Bump -bm 1.000000 n7_salle_test04_normal.png
