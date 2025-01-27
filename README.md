@@ -1,4 +1,4 @@
-This project was made for block B of IGAD/CMGT of Breda University of Applied Sciences
+This project was made for block B of Y1 Programming of IGAD/CMGT at Breda University of Applied Sciences
 
 This project's original target sytem is the Raspberry Pi 4
 It also builds on windows
