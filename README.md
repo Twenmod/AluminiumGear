@@ -17,13 +17,16 @@ On linux its base X11
 3) Select the project architecture i.e x64 for pc and arm64 for pi 4
 4) build
 ## libraries
-Some external libraries are required for this project
+Some external libraries are required for this project.
+
 Windows specific
 - GLFW
 - glad
+
 Linux/Pi specific
 - X11
 - GLES31
+  
 Shared
 - glm
 - stb_image
